@@ -1,0 +1,26 @@
+<!--pages/index/index.wxml-->
+<template name="controlItem">
+  <view class="controlItem">
+    <button class="muteButton" type="{{item.buttonType}}" bindtap="clickMuteButton" data-index="{{item.index}}">{{item.buttonName}}
+    </button>
+    <view class="controlSlider">
+      <view class="sliderMarks">
+        <view class="mark" wx:for="{{marks}}">{{item}}</view>
+      </view>
+      <canvas canvas-id="{{item.index}}" class="sliderLineCanvas">       
+      </canvas>
+      <button class="sliderButton" type="mini" style="left:7rpx; top:{{item.sliderButtonPosition}}rpx;" bindtouchmove="moveSliderButton" data-index="{{item.index}}"></button>
+    </view>  
+  </view>
+</template>
+
+
+<view class="controlContainer" >
+  <view wx:for="{{array}}">
+    <template is="controlItem" data="{{item,marks:marks}}"> 
+    </template>
+  </view>
+</view>
+
+
+

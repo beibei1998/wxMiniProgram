@@ -1,6 +1,9 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/ipad_version/ipad_version",
+    "pages/iphone_version/iphone_version"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",

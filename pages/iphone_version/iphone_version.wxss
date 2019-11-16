@@ -1,0 +1,65 @@
+/* pages/index/index.wxss */
+.controlContainer {
+  display: flex;
+  flex-direction: row;
+  width: 750rpx;
+  height: 375rpx;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.controlItem {
+  display: flex;
+  flex-direction: column;
+  width: 40rpx;
+  flex-wrap: nowrap;
+}
+
+.controlSlider {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  padding-top: 5rpx;
+  position:relative;
+}
+
+.sliderMarks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
+  height: 100%;
+}
+
+.mark {
+  width: 90%;
+  height: 27rpx;
+  font-size: 9rpx;
+  
+  vertical-align: middle;
+}
+
+.muteButton {
+  width: 90%;
+  height: 20%;
+  font-size: 9rpx;
+  vertical-align: middle;
+}
+
+.sliderLineCanvas {
+  width: 40rpx; 
+  height: 300rpx;
+  z-index: -1; 
+  padding-left: 10rpx;
+}
+
+.sliderButton {
+  height: 15rpx;
+  z-index: 0; 
+  transform: scale(1.2);
+  position: absolute;
+  background-color: rgb(153, 150, 150);
+  opacity: 0.5;
+}
